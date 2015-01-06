@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Simple Share",
+  "version": "0.0.1",
+  "description": "Simple share the current URL of the tab to email it or shaarli it!",
+
+  "permissions": ["tabs"],
+
+  "browser_action": {
+    "default_popup": "share.html",
+    "default_icon": "icons/share_19.png"
+  }
+}

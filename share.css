@@ -1,0 +1,33 @@
+body {
+  width: 200px;
+}
+ul {
+  margin: 20px 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  overflow: hidden;
+}
+ul a {
+  display: block;
+  width: 90px;
+  height: 30px;
+  margin: 0 5px;
+  line-height: 30px;
+  float: left;
+  font-size: 14px;
+  text-decoration: none;
+  background: #adadad;
+  color: #fff;
+  border-radius: 5px;
+}
+ul a:hover {
+  background: #6a6a6a;
+}
+p.conf {
+  text-align: center;
+  clear: both;
+}
+h1 {
+  margin: 0;
+}
