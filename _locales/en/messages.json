@@ -1,0 +1,21 @@
+{
+  "extension_description": {
+    "message": "Simple share the current URL of the tab to email it or shaarli it!",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Share the page",
+    "description": "Browser action title."
+  },
+
+  "share_email": {
+    "message": "Email"
+  },
+  "share_shaarli": {
+    "message": "Shaarli"
+  },
+
+  "global_save": {
+    "message": "Save"
+  }
+}

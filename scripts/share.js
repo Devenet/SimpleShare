@@ -1,8 +1,12 @@
-var links = document.getElementsByTagName("a");
-for (var i=0; i<links.length; i++) {
-  links[i].addEventListener("click", function() {
-    var method = this.getAttribute('href').substring(1);
+var links = document.querySelectorAll("li a");
+for (var i=0, l=links.length; i<l; i++) {
+  var method = links[i].getAttribute('href').substring(1);
 
+  // translation
+  links[i].innerHTML = chrome.i18n.getMessage('share_' + method);
+
+  //listener
+  links[i].addEventListener("click", function() {
     chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
       var result;
       var url = tabs[0].url;

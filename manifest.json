@@ -2,13 +2,23 @@
   "manifest_version": 2,
 
   "name": "Simple Share",
-  "version": "0.0.1",
-  "description": "Simple share the current URL of the tab to email it or shaarli it!",
+  "short_name": "Share",
 
-  "permissions": ["tabs"],
+  "version": "0.0.1",
+
+  "default_locale": "en",
+  "description": "__MSG_extension_description__",
 
   "browser_action": {
     "default_popup": "share.html",
-    "default_icon": "icons/share_19.png"
-  }
+    "default_icon": "images/share_19.png",
+    "default_title": "__MSG_browser_action_title__"
+  },
+
+  "author": "Nicolas Devenet",
+  "homepage_url": "http://simpleshare.chrome.devenet.info",
+
+  "omnibox": { "keyword" : "share" },
+
+  "permissions": ["tabs"]
 }
