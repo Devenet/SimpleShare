@@ -1,0 +1,13 @@
+{
+  "browser_action_title": {
+    "message": "Partager cette page"
+  },
+
+  "share_email": {
+    "message": "Courriel"
+  },
+
+  "global_save": {
+    "message": "Sauvegarder"
+  }
+}
