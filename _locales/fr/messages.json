@@ -7,6 +7,10 @@
     "message": "Courriel"
   },
 
+  "settings_open_window": {
+    "message": "Ouvrir dans une nouvelle fenêtre"
+  },
+
   "global_save": {
     "message": "Sauvegarder"
   }

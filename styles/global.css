@@ -12,7 +12,7 @@ ul a {
   display: block;
   width: 90px;
   height: 30px;
-  margin: 0 5px;
+  margin: 5px;
   line-height: 30px;
   float: left;
   font-size: 14px;
@@ -29,4 +29,8 @@ ul a:hover {
 }
 h1 {
   margin: 0;
+}
+a:focus, a:active {
+  outline: 3px solid #FFC123;
+  border: none;
 }
