@@ -51,7 +51,7 @@ function buildShareURL(method, url, title) {
           + '" target="_blank">' + chrome.i18n.getMessage('settings_name') + '</a></p>';
         break;
       }
-      result = localStorage['shaarli.url'] + '/?post=' + encodeURI(url)
+      result = localStorage['settings.shaarli.url'] + '/?post=' + encodeURI(url)
         + '&title=' + encodeURI(title);
       break;
 
