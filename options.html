@@ -11,16 +11,49 @@
   <h1></h1>
 
   <form>
+
+    <h2>Services</h2>
+
+    <div>
+      <p>
+        <label for="share_email" class="i18n-item"><input name="share_email" id="share_email" type="checkbox" />
+        <span></span>
+        </label>
+      </p>
+      <p>
+        <label for="share_facebook" class="i18n-item"><input name="share_facebook" id="share_facebook" type="checkbox" />
+        <span></span>
+        </label>
+      </p>
+      <p>
+        <label for="share_shaarli" class="i18n-item"><input name="share_shaarli" id="share_shaarli" type="checkbox" />
+        <span></span>
+        </label>
+        <div class="label-more" id="more_shaarli">
+          <label>URL :</label>
+          <input type="url" name="shaarli_url" id="shaarli_url" />
+        </div>
+      </p>
+      <p>
+        <label for="share_twitter" class="i18n-item"><input name="share_twitter" id="share_twitter" type="checkbox" />
+        <span></span>
+        </label>
+      </p>
+    </div>
+
+    <h2>Advanced</h2>
+
     <p>
       <label for="new_window"><input name="new_window" id="new_window" type="checkbox" />
       <span></span>
       </label>
     </p>
-    <p>
-      <label for="shaarli_url">Shaarli URL</label>
-      <input name="shaarli_url" id="shaarli_url" type="url" value="" />
+
+
+    <p class="espace-top-lg">
+      <button type="submit"></button>
+      <span id="form_msg"></span>
     </p>
-    <p><button type="submit"></button></p>
   </form>
 
   <script src="scripts/options.js"></script>

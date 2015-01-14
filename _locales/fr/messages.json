@@ -6,9 +6,12 @@
   "share_email": {
     "message": "Courriel"
   },
+  "share_shaarli_missing_url": {
+    "message": "Merci de configurer une URL pour Shaarli"
+  },
 
   "settings_open_window": {
-    "message": "Ouvrir dans une nouvelle fenêtre"
+    "message": "Ouvrir dans une nouvelle fenêtre plutôt qu'un nouvel onglet"
   },
 
   "global_save": {

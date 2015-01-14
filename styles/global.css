@@ -30,7 +30,15 @@ ul a:hover {
 h1 {
   margin: 0;
 }
-a:focus, a:active {
+a:focus, a:active,
+input:focus, input:active {
   outline: 3px solid #FFC123;
   border: none;
+}
+
+.espace-top {
+  margin-top: 20px;
+}
+.espace-top-lg {
+  margin-top: 40px;
 }

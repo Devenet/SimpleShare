@@ -1,3 +1,19 @@
 body {
   margin: auto;
+  width: 400px;
+}
+
+.label-more {
+  margin: -5px auto auto 22px;
+}
+.label-more input {
+  border: none;
+  border-bottom: 1px inset #ccc;
+  padding: 2px 4px;
+  width: 75%;
+  color: #555;
+}
+
+#form_msg {
+  margin-left: 20px;
 }

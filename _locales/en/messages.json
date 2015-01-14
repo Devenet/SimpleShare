@@ -21,6 +21,9 @@
   "share_shaarli": {
     "message": "Shaarli"
   },
+  "share_shaarli_missing_url": {
+    "message": "Please configure the URL of Shaarli first"
+  },
   "share_twitter": {
     "message": "Twitter"
   },
@@ -30,9 +33,10 @@
     "description": "Name of the Options page"
   },
   "settings_open_window": {
-    "message": "Open in a new window",
+    "message": "Open in a new window instead a new tab",
     "description": "Options to open the share page in a new window instead of a new tab"
   },
+
 
   "global_save": {
     "message": "Save"
