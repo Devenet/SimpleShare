@@ -13,5 +13,11 @@
 
   "global_save": {
     "message": "Sauvegarder"
+  },
+  "global_saved": {
+    "message": "Sauvegardé"
+  },
+  "global_back": {
+    "message": "Retour"
   }
 }

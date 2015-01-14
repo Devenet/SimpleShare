@@ -1,4 +1,4 @@
-var links = document.querySelectorAll("li a");
+var links = document.querySelectorAll('li a');
 for (var i=0, l=links.length; i<l; i++) {
   var method = links[i].getAttribute('href').substring(1);
 
@@ -9,10 +9,11 @@ for (var i=0, l=links.length; i<l; i++) {
   links[i].addEventListener("click", function(event) {
 
     method = event.path[0].hash.substring(1);
-    chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+    chrome.tabs.query({ active: true }, function (tabs) {
       var result;
       var url = tabs[0].url;
       var title = tabs[0].title;
+      var window_openable = true;
 
       switch(method) {
         case 'shaarli':
@@ -26,6 +27,7 @@ for (var i=0, l=links.length; i<l; i++) {
 
         case 'email':
           result = 'mailto:?' + 'subject=' + encodeURI(title) + '&body=' + encodeURI(url);
+          window_openable = false;
           break;
 
         case 'twitter':
@@ -40,7 +42,7 @@ for (var i=0, l=links.length; i<l; i++) {
       }
 
       if (result) {
-        if (localStorage['settings.open.window']) {
+        if (window_openable && localStorage['settings.open.window'] == "true") {
           chrome.windows.create( {
             url: result,
             type: "popup",
@@ -53,3 +55,5 @@ for (var i=0, l=links.length; i<l; i++) {
     });
   });
 }
+
+document.querySelector('p a').innerHTML = chrome.i18n.getMessage('settings_name');

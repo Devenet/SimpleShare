@@ -21,10 +21,20 @@
     "default_title": "__MSG_browser_action_title__"
   },
 
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "scripts/bg.js"
+    ]
+  },
+
   "author": "Nicolas Devenet",
   "homepage_url": "http://simpleshare.chrome.devenet.info",
+  "options_page": "options.html",
 
   "omnibox": { "keyword" : "share" },
 
-  "permissions": ["tabs"]
+  "permissions": [
+    "activeTab"
+  ]
 }

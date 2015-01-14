@@ -8,6 +8,10 @@
     "description": "Browser action title."
   },
 
+  "share_name": {
+    "message": "Share",
+    "description": "Name of the Share page"
+  },
   "share_email": {
     "message": "Email"
   },
@@ -21,6 +25,10 @@
     "message": "Twitter"
   },
 
+  "settings_name": {
+    "message": "Options",
+    "description": "Name of the Options page"
+  },
   "settings_open_window": {
     "message": "Open in a new window",
     "description": "Options to open the share page in a new window instead of a new tab"
@@ -28,5 +36,11 @@
 
   "global_save": {
     "message": "Save"
+  },
+  "global_saved": {
+    "message": "Saved"
+  },
+  "global_back": {
+    "message": "Back"
   }
 }
