@@ -32,6 +32,12 @@
     "message": "Options",
     "description": "Name of the Options page"
   },
+  "settings_services": {
+    "message": "Services"
+  },
+  "settings_advanced": {
+    "message": "Advanced"
+  },
   "settings_open_window": {
     "message": "Open in a new window instead a new tab",
     "description": "Options to open the share page in a new window instead of a new tab"
@@ -46,5 +52,11 @@
   },
   "global_back": {
     "message": "Back"
+  },
+  "global_close": {
+    "message": "Close"
+  },
+  "global_to": {
+    "message": "to"
   }
 }

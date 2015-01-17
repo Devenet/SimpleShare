@@ -10,6 +10,12 @@
     "message": "Merci de configurer une URL pour Shaarli"
   },
 
+  "settings_services": {
+    "message": "Services"
+  },
+  "settings_advanced": {
+    "message": "Avancé"
+  },
   "settings_open_window": {
     "message": "Ouvrir dans une nouvelle fenêtre plutôt qu'un nouvel onglet"
   },
@@ -22,5 +28,11 @@
   },
   "global_back": {
     "message": "Retour"
+  },
+  "global_close": {
+    "message": "Fermer"
+  },
+  "global_to": {
+    "message": "à"
   }
 }

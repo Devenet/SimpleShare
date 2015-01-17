@@ -11,7 +11,8 @@ for (var item in items) {
 chrome.omnibox.onInputChanged.addListener(function(text, suggest) {
   if (items.email) {
     var c = /email\s+.*/i.test(text) ? text : 'email ' + text;
-    var d = 'email &#8227; ' + chrome.i18n.getMessage('share_email') + ( text.length > 0 ? ' to ' + text : c);
+    var d = 'email &#8227; ' + chrome.i18n.getMessage('share_email')
+      + ( text.length > 0 ? ' ' + chrome.i18n.getMessage('global_to') + ' ' + text : c);
 
     console.log(c, d);
 
