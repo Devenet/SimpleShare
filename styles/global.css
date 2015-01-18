@@ -2,9 +2,16 @@ body {
   width: 200px;
 }
 ul {
-  margin: 10px 0;
+  padding: 0;
+  margin: 0;
   list-style: none;
-  padding-left: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   text-align: center;
   overflow: hidden;
 }
@@ -14,7 +21,6 @@ ul a {
   height: 30px;
   margin: 5px;
   line-height: 30px;
-  float: left;
   font-size: 14px;
   text-decoration: none;
   background: #adadad;

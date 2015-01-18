@@ -7,7 +7,8 @@ var items = { email:1, facebook:0, shaarli:0, twitter:1 };
 var close_btn = document.getElementById('i18n-close');
 
 // translation
-document.querySelector('h1').innerHTML = chrome.i18n.getMessage('settings_name');
+document.querySelector('title').innerHTML = document.querySelector('title').innerHTML.replace('Options', chrome.i18n.getMessage('settings_name'));
+document.getElementById('i18n-options').innerHTML = chrome.i18n.getMessage('settings_name');
 document.getElementById('i18n-services').innerHTML = chrome.i18n.getMessage('settings_services');
 document.getElementById('i18n-advanced').innerHTML = chrome.i18n.getMessage('settings_advanced');
 document.getElementById('i18n-save').innerHTML = chrome.i18n.getMessage('global_save');

@@ -1,5 +1,10 @@
 body {
   margin: auto;
+  width: 100%;
+}
+
+.container {
+  margin: auto;
   width: 400px;
 }
 
@@ -14,6 +19,26 @@ body {
   color: #555;
 }
 
+header {
+  background: #efefef;
+}
+header .container {
+  padding: 20px 0;
+}
+
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  font-weight: normal;
+}
+
 #form_msg {
   margin-left: 20px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  border-bottom: 4px solid #efefef;
+  padding-bottom: 5px;
 }

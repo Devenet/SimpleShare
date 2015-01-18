@@ -47,7 +47,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       }
       else { chrome.tabs.create({url: result}); }
     }
-    else { alert('Unknow command!'); }
+    else { alert(chrome.i18n.getMessage('share_unknow_command')); }
   });
 });
 

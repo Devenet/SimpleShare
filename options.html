@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Simple share</title>
+  <title>Options &middot; Simple Share</title>
   <link rel="stylesheet" href="styles/global.css" />
   <link rel="stylesheet" href="styles/options.css" />
 </head>
 
 <body>
 
-  <h1></h1>
-
-  <form>
-
-    <h2 id="i18n-services"></h2>
-
-    <div>
-      <p>
-        <label for="share_email" class="i18n-item"><input name="share_email" id="share_email" type="checkbox" />
-        <span></span>
-        </label>
-      </p>
-      <p>
-        <label for="share_facebook" class="i18n-item"><input name="share_facebook" id="share_facebook" type="checkbox" />
-        <span></span>
-        </label>
-      </p>
-      <p>
-        <label for="share_shaarli" class="i18n-item"><input name="share_shaarli" id="share_shaarli" type="checkbox" />
-        <span></span>
-        </label>
-        <div class="label-more" id="more_shaarli">
-          <label>URL :</label>
-          <input type="url" name="shaarli_url" id="shaarli_url" />
-        </div>
-      </p>
-      <p>
-        <label for="share_twitter" class="i18n-item"><input name="share_twitter" id="share_twitter" type="checkbox" />
-        <span></span>
-        </label>
-      </p>
+  <header>
+    <div class="container">
+      <h1>Simple Share</h1>
+      <h2 id="i18n-options"></h2>
     </div>
+  </header>
 
-    <h2 id="i18n-advanced"></h2>
+  <div class="container">
+    <form>
 
-    <p>
-      <label for="new_window"><input name="new_window" id="new_window" type="checkbox" />
-      <span></span>
-      </label>
-    </p>
+      <h3 id="i18n-services"></h3>
+      <div>
+        <p>
+          <label for="share_email" class="i18n-item"><input name="share_email" id="share_email" type="checkbox" />
+          <span></span>
+          </label>
+        </p>
+        <p>
+          <label for="share_facebook" class="i18n-item"><input name="share_facebook" id="share_facebook" type="checkbox" />
+          <span></span>
+          </label>
+        </p>
+        <p>
+          <label for="share_shaarli" class="i18n-item"><input name="share_shaarli" id="share_shaarli" type="checkbox" />
+          <span></span>
+          </label>
+          <div class="label-more" id="more_shaarli">
+            <label>URL :</label>
+            <input type="url" name="shaarli_url" id="shaarli_url" />
+          </div>
+        </p>
+        <p>
+          <label for="share_twitter" class="i18n-item"><input name="share_twitter" id="share_twitter" type="checkbox" />
+          <span></span>
+          </label>
+        </p>
+      </div>
+
+      <h3 id="i18n-advanced"></h3>
+      <p>
+        <label for="new_window"><input name="new_window" id="new_window" type="checkbox" />
+        <span></span>
+        </label>
+      </p>
 
 
-    <p class="espace-top-lg">
-      <button type="submit" id="i18n-save"></button>
-      <button id="i18n-close"></button>
-      <span id="form_msg"></span>
-    </p>
-  </form>
+      <p class="espace-top-lg">
+        <button type="submit" id="i18n-save"></button>
+        <button id="i18n-close"></button>
+        <span id="form_msg"></span>
+      </p>
+    </form>
+  </div>
 
   <script src="scripts/options.js"></script>
 </body>

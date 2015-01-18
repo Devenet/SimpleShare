@@ -27,6 +27,9 @@
   "share_twitter": {
     "message": "Twitter"
   },
+  "share_unknow_command": {
+    "message": "Unknow command!"
+  },
 
   "settings_name": {
     "message": "Options",

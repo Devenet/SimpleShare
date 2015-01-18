@@ -9,6 +9,9 @@
   "share_shaarli_missing_url": {
     "message": "Merci de configurer une URL pour Shaarli"
   },
+  "share_unknow_command": {
+    "message": "Commande inconnue !"
+  },
 
   "settings_services": {
     "message": "Services"
