@@ -12,9 +12,7 @@ chrome.omnibox.onInputChanged.addListener(function(text, suggest) {
   if (items.email) {
     var c = /email\s+.*/i.test(text) ? text : 'email ' + text;
     var d = 'email &#8227; ' + chrome.i18n.getMessage('share_email')
-      + ( text.length > 0 ? ' ' + chrome.i18n.getMessage('global_to') + ' ' + text : c);
-
-    console.log(c, d);
+      + ( text.length > 0 ? ' ' + chrome.i18n.getMessage('global_to') + ' ' + text : '');
 
     suggests[0] = { content: c, description: d };
   }
@@ -25,6 +23,7 @@ chrome.omnibox.onInputChanged.addListener(function(text, suggest) {
 chrome.omnibox.onInputEntered.addListener(function(text) {
   chrome.tabs.query({ active: true }, function (tabs) {
     var result;
+
     // when email, address can be given
     if (/email\s+\w+@\w+\.\w+/i.test(text)) {
       var address = /email\s+(\w+@\w+\.\w+)/i.exec(text)[1];
@@ -36,6 +35,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       result = buildShareURL(text, tabs[0].url, tabs[0].title);
     }
     var window_openable = text != 'email';
+
     if (result) {
       if (window_openable && localStorage['settings.open.window'] == "true") {
         chrome.windows.create( {
