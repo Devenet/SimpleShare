@@ -1,4 +1,8 @@
 {
+  "extension_description": {
+    "message": "Partager simplement l’URL de votre page actuelle par email, sur vos réseaux socaiux (Facebook, Twitter) ou sur votre Shaarli !",
+    "description": "Extension description."
+  },
   "browser_action_title": {
     "message": "Partager cette page"
   },
@@ -7,7 +11,7 @@
     "message": "Courriel"
   },
   "share_shaarli_missing_url": {
-    "message": "Merci de configurer une URL pour Shaarli"
+    "message": "Merci de configurer une URL pour votre Shaarli"
   },
   "share_unknow_command": {
     "message": "Commande inconnue !"
@@ -19,8 +23,11 @@
   "settings_advanced": {
     "message": "Avancé"
   },
+  "settings_services_description": {
+    "message": "Activer les services que vous souhaitez utiliser avec le bouton Simple Share."
+  },
   "settings_open_window": {
-    "message": "Ouvrir dans une nouvelle fenêtre plutôt qu'un nouvel onglet"
+    "message": "Ouvrir dans une nouvelle fenêtre plutôt qu’un nouvel onglet"
   },
 
   "global_save": {

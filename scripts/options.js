@@ -5,11 +5,13 @@ var more_shaarli = document.getElementById('more_shaarli');
 var form_msg = document.getElementById('form_msg');
 var items = { email:1, facebook:0, shaarli:0, twitter:1 };
 var close_btn = document.getElementById('i18n-close');
+var timeouts = [];
 
 // translation
 document.querySelector('title').innerHTML = document.querySelector('title').innerHTML.replace('Options', chrome.i18n.getMessage('settings_name'));
 document.getElementById('i18n-options').innerHTML = chrome.i18n.getMessage('settings_name');
 document.getElementById('i18n-services').innerHTML = chrome.i18n.getMessage('settings_services');
+document.getElementById('i18n-services-description').innerHTML = chrome.i18n.getMessage('settings_services_description');
 document.getElementById('i18n-advanced').innerHTML = chrome.i18n.getMessage('settings_advanced');
 document.getElementById('i18n-save').innerHTML = chrome.i18n.getMessage('global_save');
 close_btn.innerHTML = chrome.i18n.getMessage('global_close');
@@ -46,14 +48,16 @@ function saveData() {
   localStorage['settings.open.window'] = new_window.checked;
 }
 
+
 // load and save data
 document.addEventListener('DOMContentLoaded', loadData);
 document.addEventListener("submit", function(e) {
   e.preventDefault();
+  clearFormMsg();
 
   saveData();
   form_msg.textContent = chrome.i18n.getMessage('global_saved');
-  setTimeout(function() { form_msg.textContent = ''; }, 3500);
+  timeouts.push( setTimeout(function() { form_msg.textContent = ''; }, 4000) );
 
   return false;
 });
@@ -66,3 +70,11 @@ document.getElementById('share_shaarli').addEventListener('change', function() {
   more_shaarli.style.display = this.checked ? 'block' : 'none';
   shaarli_url.required = this.checked;
 });
+
+// helpers
+function clearFormMsg() {
+  form_msg.textContent = '';
+  for (var i=0, l=timeouts.length; i<l; i++) {
+    clearTimeout(timeouts[i]);
+  }
+}

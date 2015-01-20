@@ -8,9 +8,7 @@ body {
   width: 400px;
 }
 
-.label-more {
-  margin: -5px auto auto 22px;
-}
+.label-more { margin: -5px auto auto 22px; }
 .label-more input {
   border: none;
   border-bottom: 1px inset #ccc;
@@ -19,22 +17,17 @@ body {
   color: #555;
 }
 
-header {
-  background: #efefef;
-}
+header { background: #efefef; }
 header .container {
   padding: 20px 0;
+  background: url('../images/icon-48.png') right center no-repeat;
 }
-
-header h1, header h2 {
-  margin: 0;
-}
-header h2 {
-  font-weight: normal;
-}
+header h1, header h2 { margin: 0; }
+header h2 { font-weight: normal; }
 
 #form_msg {
   margin-left: 20px;
+  font-weight: bold;
 }
 
 h3 {
