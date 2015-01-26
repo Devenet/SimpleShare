@@ -1,7 +1,7 @@
 {
   "extension_description": {
     "message": "Partager simplement l’URL de votre page actuelle par email, sur vos réseaux sociaux ou sur votre Shaarli !",
-    "description": "Extension description."
+    "description": "Extension description"
   },
   "browser_action_title": {
     "message": "Partager cette page"
