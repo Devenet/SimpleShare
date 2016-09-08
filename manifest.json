@@ -4,7 +4,7 @@
   "name": "Simple Share",
   "short_name": "Share",
 
-  "version": "0.0.4",
+  "version": "1.0.0",
 
   "icons": {
     "16": "images/icon-16.png",
@@ -29,7 +29,7 @@
   },
 
   "author": "Nicolas Devenet",
-  "homepage_url": "http://simpleshare.chrome.devenet.info",
+  "homepage_url": "https://github.com/Devenet/SimpleShare",
   "options_page": "options.html",
 
   "omnibox": { "keyword" : "share" },

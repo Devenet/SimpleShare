@@ -1,4 +1,7 @@
-body { width: 200px; }
+body {
+  width: 200px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 ul {
   padding: 0;
   margin: 0;
@@ -36,6 +39,7 @@ input:focus, input:active {
 
 .espace-top { margin-top: 20px; }
 .espace-top-lg { margin-top: 40px; }
+.espace-top-xs { margin-top: 5px; }
 
 .bg-fb { background-color: #3b5998; }
 .bg-fb:hover { background-color: #6d84b4; }

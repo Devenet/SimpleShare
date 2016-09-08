@@ -30,7 +30,7 @@ for (var i=0, l=links.length; i<l; i++) {
           else { chrome.tabs.create({url: result}); }
         }
       });
-
+      
       return true;
     });
   }
@@ -40,13 +40,24 @@ for (var i=0, l=links.length; i<l; i++) {
   }
 }
 
+// everything is disabled
+if (count_services(items) === 0) {
+  document.querySelector(".i18n-share").style.display = 'none';
+  document.getElementById('services_disabled').innerHTML = chrome.i18n.getMessage('share_services_disabled')
+    + '<br><a href="' + chrome.extension.getURL('options.html') + '" target="_blank">'
+    + chrome.i18n.getMessage('settings_name') + '</a>';
+}
+else {
+  document.getElementById('services_disabled').style.display = 'none';
+}
+
 function buildShareURL(method, url, title) {
   var result = null;
   switch(method) {
     case 'shaarli':
       if (!localStorage['settings.shaarli.url']) {
         var share_msg = document.getElementById('share-msg');
-        share_msg.innerHTML = '<p>' + chrome.i18n.getMessage('share_shaarli_missing_url') + ' &#8227; <a href="'
+        share_msg.innerHTML = '<p class="espace-top-xs">' + chrome.i18n.getMessage('share_shaarli_missing_url') + ' &#8227; <a href="'
           + chrome.extension.getURL('options.html')
           + '" target="_blank">' + chrome.i18n.getMessage('settings_name') + '</a></p>';
         break;
@@ -70,4 +81,10 @@ function buildShareURL(method, url, title) {
       break;
   }
   return result;
+}
+
+function count_services(items) {
+  total = 0;
+  for (var property in items) { total += items[property]; }
+  return total;
 }

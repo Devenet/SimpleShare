@@ -1,6 +1,6 @@
 {
   "extension_description": {
-    "message": "Partager simplement l’URL de votre page actuelle par email, sur vos réseaux sociaux ou sur votre Shaarli !",
+    "message": "Partager simplement votre onglet courant par email, sur vos réseaux sociaux ou sur votre Shaarli !",
     "description": "Extension description"
   },
   "browser_action_title": {
@@ -15,6 +15,9 @@
   },
   "share_unknow_command": {
     "message": "Commande inconnue !"
+  },
+  "share_services_disabled": {
+    "message": "Aucun service activé :("
   },
 
   "settings_services": {

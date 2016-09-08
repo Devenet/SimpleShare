@@ -35,3 +35,9 @@ h3 {
   border-bottom: 4px solid #efefef;
   padding-bottom: 5px;
 }
+
+.credits { color: #888; }
+.credits h3 {
+  border-bottom: 2px solid #efefef;
+  font-weight: normal;
+}
