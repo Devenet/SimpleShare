@@ -1,4 +1,4 @@
-var items = { email:1, facebook:0, shaarli:0, twitter:1 };
+var items = { email:1, facebook:1, shaarli:0, twitter:0 };
 items = !localStorage['settings.share.items'] ? items : JSON.parse(localStorage['settings.share.items']);
 
 var links = document.querySelectorAll('.i18n-share a');
@@ -15,7 +15,7 @@ for (var i=0, l=links.length; i<l; i++) {
       event.preventDefault();
 
       method = event.path[0].hash.substring(1);
-      chrome.tabs.query({ active: true }, function (tabs) {
+      chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         var result = buildShareURL(method, tabs[0].url, tabs[0].title);
         var window_openable = method != 'email';
         if (result) {

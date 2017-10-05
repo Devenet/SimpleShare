@@ -1,4 +1,4 @@
-var items = { email:1, facebook:0, shaarli:0, twitter:1 };
+var items = { email:1, facebook:1, shaarli:0, twitter:0 };
 items = !localStorage['settings.share.items'] ? items : JSON.parse(localStorage['settings.share.items']);
 var suggests = [];
 for (var item in items) {
